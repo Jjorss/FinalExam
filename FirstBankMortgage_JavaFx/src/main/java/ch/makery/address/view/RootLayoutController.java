@@ -19,6 +19,27 @@ public class RootLayoutController {
 
 
     @FXML
+    private void handleNew() {
+        
+    }
+    
+    @FXML
+    private void handleOpen() {
+        
+    }
+    
+    @FXML
+    private void handleSave() {
+        
+    }
+    
+    @FXML
+    private void handleSaveAs() {
+        
+    }
+    
+    
+    @FXML
     private void handleExit() {
         System.exit(0);
     }

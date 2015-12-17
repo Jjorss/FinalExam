@@ -51,7 +51,7 @@ public class MainApp extends Application {
 
         initRootLayout();
 
-        showPersonOverview();
+        showMortgage();
     }
 
     /**
@@ -82,17 +82,17 @@ public class MainApp extends Application {
     }
 
     /**
-     * Shows the person overview inside the root layout.
+     * Shows the mortgage inside the root layout.
      */
-    public void showPersonOverview() {
+    public void showMortgage() {
         try {
-            // Load person overview.
+            // Load Mortgage.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
-            AnchorPane personOverview = (AnchorPane) loader.load();
+            loader.setLocation(MainApp.class.getResource("view/Mortgage.fxml"));
+            AnchorPane mortgage = (AnchorPane) loader.load();
 
-            // Set person overview into the center of root layout.
-            rootLayout.setCenter(personOverview);
+            // Set  mortgage into the center of root layout.
+            rootLayout.setCenter(mortgage);
 
             // Give the controller access to the main app.
             MortgageController controller = loader.getController();
